@@ -62,7 +62,7 @@ private
   end
 
   def sort_records(records)
-    records.order_by(sort_column.to_s => sort_direction)
+    records.order(sort_column.to_s => sort_direction)
   end
 
   def filter_records(records, filters = nil)
