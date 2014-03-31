@@ -48,7 +48,7 @@ private
   end
 
   def paginate_records(records)
-    records.page(page).per(per_page)
+    records.page(page).per_page(per_page)
   end
 
   def search_records(records)
